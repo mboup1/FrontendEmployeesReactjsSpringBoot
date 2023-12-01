@@ -23,7 +23,7 @@ function CreateEmployee() {
     let dataJsonEmployer = { firstName: firstName, name: name, email: email };
     console.log('employee => ' + JSON.stringify(dataJsonEmployer));
 
-    // Traiter les données du formulaire ici, par exemple les envoyer à une API
+    // Traiter les données du formulaire  ici, par exemple les envoyer à une API
     const EMPLOYEE_API_BASE_URL = "http://localhost:8080/employer/id";
     axios.post(EMPLOYEE_API_BASE_URL , dataJsonEmployer)
       .then(response => {
